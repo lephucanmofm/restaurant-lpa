@@ -1,0 +1,412 @@
+@media (max-width:575px){
+    header.header{
+        height: auto;
+       padding-bottom: 1rem;
+    }
+    .header-top_fixed{
+        position: fixed;
+        padding-bottom: 2rem;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+        z-index: 9999;
+        /* transform: translateY(-100%); */
+        
+    }
+    /* .header_fixed-top{
+        transform: translateY(0);
+        transition: transform ease-in 0.4s;
+    } */
+    nav.navbar{
+        margin-top: 1rem;
+    }
+    label[for="open_mobile"]{
+        display: block;
+    }
+    label[for="open_mobile"]+input{
+        display: block;
+        opacity: 0;
+    }
+    .nav--list{
+        display: none;
+    }
+    .introduce_web{
+        margin-top: 2rem;
+    }
+    .introduce-text .introduce--title{
+        font-size: 2rem;
+    
+    }
+    .introduce--heading{
+        font-size: 3.5rem;
+    }
+    .introduce--description{
+        font-size: 1.6rem;
+    }
+    .introduce--description,
+    .introduce--heading, .introduce--title{
+        margin-bottom: 2rem;
+    }
+    .introduce-text~.slider_img{
+        max-width: 10rem;
+        z-index: -1;
+    }
+    .introduce_web~aside{
+        display: none;
+    }
+
+    /* main */
+    #about{
+        padding: 2.5rem 0;
+        display: flex;
+        justify-content: center;
+    }
+    .quantity_food--title{
+        font-size: 2rem;
+    }
+    .quantity_food--reson{
+        font-size: 2.5rem;
+    }
+  .box_about-img{
+      display: flex;
+      justify-content: center;
+  }
+  .box_about-img::after{
+      left: 4rem;
+      height: 70%;
+  }
+  .icon-group{
+      margin-bottom: 5px;
+  }
+  .reason-list{
+      margin-top: 3rem;
+  }
+  .reason-item{
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .reason-item--content{
+      margin-left: 5px;
+      text-align: center;
+  }
+  .reason-item--name{
+      font-size: 2rem;
+  }
+  .reason-item--desc{
+      font-size: 1.4rem;
+  }
+
+  /* delicous_menu */
+  #menu.delicous_menu{
+      background-image: none;
+  }
+  .menu_food--title{
+      font-size: 2rem;
+  }
+  .menu_food--heading{
+      font-size: 3rem;
+  }
+  .meal_day{
+      padding-top: 2.5rem;
+  }
+  .meal_day-name{
+      font-size: 2rem;
+  }
+  .menu_food{
+      margin-top: 3rem;
+  }
+  .food-name{
+      font-size: 2rem;
+  }
+  .food-desc{
+      font-size: 1.4rem;
+  }
+  .history_brand{
+      min-height: 50vh;
+      height: 100%;
+      background-position: top center;
+      background-size: cover;
+      padding-bottom: 2rem;
+      padding-top: 2rem;
+  }
+  .card-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+  }
+  .history_intro{
+      font-size: 2rem;
+      text-align: center;
+  }
+  .history_desc{
+      font-size: 1.4rem;
+      text-align: center;
+  }
+  button.btn{
+      font-size: 1.4rem;
+      margin: 0 auto;
+  }
+  .card-container{
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+  }
+
+  /* book_now */
+  .book_now{
+      position: relative;
+  }
+  .book_now  .row{
+      position: relative;
+      height: 100%;
+  }
+  .img-group-book{
+      display: none;
+  }
+  .book--title{
+      font-size: 2rem;
+  }
+  .book--heading{
+      font-size: 3rem;
+  }
+  .book--desc{
+      font-size: 1.4rem;
+  }
+  /*delicous_food*/
+  .delicous_food{
+
+  }
+  .delicous_food--title{
+      font-size: 2rem;
+  }
+  .delicous_food--heading{
+      font-size: 3rem;
+  }
+  .gallery_food-item{
+      padding: 0;
+  }
+  /* promotion */
+  .promotion{
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+  }
+  .promotion--title{
+      font-size: 2rem;
+  }
+  .promotion--heading{
+      font-size: 3rem;
+  }
+  .deal-name{
+      font-size: 1.8rem;
+  }
+  .btn-transfer{
+      font-size: 1.6rem;
+  }
+  /*quantity_recipes */
+  .quantity_recipes--title{
+      font-size: 2rem;
+  }
+  .quantity_recipes--heading{
+      font-size: 3rem;
+  }
+  .blog-content{
+      text-align: center;
+  }
+  /* contact */
+  .contact{
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+  }
+  .book-table,.contact-info{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+  }
+  .form-group{
+      padding: 0;
+  }
+  #book_now{
+      
+  }
+
+  /* footer */
+  .footer-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  .brand{
+      text-align: center;
+  }
+  .footer-right{
+      margin-left: 0;
+  }
+  .scrollTop-app{
+   
+    right: 1rem;
+    bottom: 1rem;
+   
+}
+}
+@media (min-width:576px){
+    .header > aside{
+        display: none;
+    }
+    .header-top_fixed{
+        position: fixed;
+        padding-bottom: 2rem;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+        z-index: 9999;
+        /* transform: translateY(-100%); */
+        
+    }
+    .introduce--title{
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+    .introduce--heading{
+        font-size: 4.5rem;
+        margin-bottom: 3rem;
+    }
+    .nav--list{
+        display: none;
+    }
+   
+    .quantity_food--detail{
+        justify-content: center;
+    }
+    .box_about-img{
+        margin-bottom: 1.5rem;
+        display: flex;
+        justify-content: center;
+    }
+    .img_about{
+        width: 100%;
+    }
+    .icon-group{
+        margin-bottom: 1.2rem;
+    }
+    .icon-group>i{
+        font-size: 2.5rem;
+    }
+    .reason-item{
+    
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .reason-item--content{
+        margin-left: 5px;
+        text-align: center;
+    }
+    .history_brand{
+        min-height: 50vh;
+        height: 100%;
+        background-position: top center;
+        background-size: cover;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .card-container{
+        margin-bottom: 5px;
+    }
+    .card-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .history_intro{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .history_desc{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    button.btn{
+        font-size: 1.8rem;
+        margin: 0 auto;
+    }
+    .scrollTop-app{
+   
+        right: 1.5rem;
+        bottom: 1.5rem;
+       
+    }
+    .img-group-book{
+        display: none;
+    }
+    .slider_img{
+        max-width: 115px;
+    }
+   
+}
+@media (min-width:768px){
+    
+    .icon_menu-mobile{
+        display: none;
+    }
+    .navbar.nav-app{
+        display: flex;
+    }
+    .nav--list{
+        display: flex;
+    }
+    .reason-item{
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+    .reason-item--content{
+        text-align: left;
+    }
+    .icon-group>i{
+        font-size: 2rem;
+    }
+    .scrollTop-app{
+   
+        right: 2rem;
+        bottom: 2rem;
+    }
+   
+}
+
+@media (min-width: 992px){
+    .header > aside{
+        display: block;
+    }
+    .hedaer-top_hidden{
+        display: none;
+    }
+    .img-group-book{
+        display: block;
+    }
+    .introduce--title{
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+    .introduce--heading{
+        font-size: 6.5rem;
+        margin-bottom: 6rem;
+    }
+    .slider_img{
+        max-width: 150px;
+    }
+}
+@media (min-width:1200px){
+
+}

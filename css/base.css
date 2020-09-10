@@ -1,0 +1,238 @@
+:root{
+    --header-top-height : 50px;
+    --black-color : rgba(0,0,0,1);
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+html{
+    font-size: 62.5%;
+}
+
+.btn{
+    outline: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    border: none;
+    overflow: hidden;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+.btn-primary{
+    background-color: #84b813;
+    color: white;
+    font-weight: 500;
+}
+
+.btn-primary:hover{
+    background-color: brown;
+    transition: all ease-in 0.3s;
+}
+
+@keyframes actionImage{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: 100% 50%;
+       
+    }
+    50%{
+        transform: rotate(-5deg);
+        transform-origin: 100% 50%;
+    }
+    100%{
+        transform: rotate(0);
+        transform-origin: 100% 50%;
+    }
+}
+
+@keyframes actionImageRight{
+    0%{
+        transform: rotate(-5deg);
+        transform-origin: 150% 100%;
+       
+    }
+    50%{
+        transform: rotate(5deg);
+        transform-origin: 50% 100%;
+    }
+    100%{
+        transform: rotate(-5deg);
+        transform-origin: 150% 100%;
+    }
+}
+
+
+@keyframes transformImgLeft{
+    0%{
+        left: -100%;
+    }
+}
+
+@keyframes transformImgRight{
+    0%{
+        right: -100%;
+    }
+}
+
+@keyframes transformImgTopLeft{
+    0%{
+        top: -50%;
+    }
+}
+@keyframes transformImgTopRight{
+    0%{
+        top: -50%;
+    }
+}
+
+.icon_menu-mobile{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+}
+.crossbar{
+    width: 2.5rem;
+    height: 2px;
+    background-color: black;
+    display: block;
+    position: relative;
+}
+.crossbar:first-child,.crossbar:last-child{
+    
+}
+.crossbar:nth-child(2){
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
+
+.menu-mobile{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform ease-in 0.4s;
+    z-index: 9999;
+}
+.icon-exit{
+    display: block;
+    
+    background-color: brown;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    border-bottom-left-radius: 10px;
+}
+.icon-exit>i{
+    color: white;
+    font-size: 3rem;
+    padding: 0 5px;
+}
+.nav-mobile--list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #84b813;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+}
+.nav-mobile--item{
+    margin: 1rem 0;
+}
+.nav-mobile--link{
+    padding: 1.5rem 0;
+    display: block;
+    font-size: 2rem;
+    color: white;
+    position: relative;
+}
+.nav-mobile--link::after{
+    content: '';
+    display: block;
+    position: relative;
+    
+    width: 0%;
+    height: 3px;
+    background-color: brown;
+    transition: width ease-in 0.4s;
+}
+.nav-mobile--link:hover::after{
+    width: 100%;
+}
+label[for="open_mobile"]{
+    font-size: 2rem;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 12;
+}
+.show_menu{
+    
+    transform: translateX(0);
+}
+
+.scrollTop-app{
+    cursor: pointer;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 999;
+    display: none;
+}
+.box-iconScroll{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: #84b813;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+/* .box-iconScroll::before{
+    content: '';
+    position: absolute;
+    display: block;
+    top: -100%;
+    left: 0;
+    border-style: solid;
+    border-width: 2rem;
+    border-color: transparent transparent #84b813 transparent;
+}
+.box-iconScroll::after{
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    border-style: solid;
+    border-width: 2rem;
+    border-color: transparent transparent red transparent;
+    z-index: 2;
+} */
+.icon-scroll{
+    font-size: 1.6rem;
+    color: white;
+    display: block;
+    position: relative;
+    z-index:  5;
+}
+.show_scroll{
+    display: block;
+}
